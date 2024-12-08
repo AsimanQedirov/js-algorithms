@@ -20,6 +20,8 @@ function findSecondLargestElementOfArray(arr) {
     let temp = sortedArray[0]
     for (let i = 0; i < sortedArray; i++) {
         if (temp > sortedArray[i]) {
+            let subTemp = temp
+            temp = sortedArray[i]
         }
         temp = sortedArray[i]
     }
